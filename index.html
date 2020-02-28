@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>testIframe</title>
 </head>
 <body>
-<iframe src="http://wx.10086.cn/website/spa/main/home"
-style="width: 100%;height: 100%;z-index: 1" frameborder="0" scrolling="no"></iframe>
+<div class="mainBox">
+    <p>
+        <img id="yyt_img" src="src/yyt_20181220.jpg" alt="广东移动手机营业厅" border="0">
+        <a class="btn_ios" id="btn_downIosApp" otype="button" otitle="安卓下载" onclick="androidDownLoad()">
+        </a>
+        <!-- Android版下载 -->
+        <a class="btn_android" id="btn_downAndroidApp" otype="button" otitle="IOS下载" title="ios版下载" onclick="iphoneDownLoad()"></a>
+        <!-- ios版下载 -->
+    </p>
+</div>
+<iframe src="https://gd.10086.cn/personal/others/text/index.shtml?functionCode=GMCCAPP_003_004&relateId=2%7CappLogin%7Chttp://gd.10086.cn/gmccapp/confactpage/sigin/index.html?channelId=8611"
+        class="hidden" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-forms"></iframe>
 </body>
 </html>
